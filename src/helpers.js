@@ -9,5 +9,4 @@ const shuffler = array => {
 module.exports = {
   shuffler: shuffler,
   random_element: random_element
-
 }
