@@ -1,0 +1,18 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "es6": true
+    },
+    "extends": [
+        "standard",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "camelcase": "off" // Check Camel Case Names
+    }
+}
