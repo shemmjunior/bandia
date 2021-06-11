@@ -12,11 +12,10 @@ Generate Tanzanian based mock data
  - [x]  Full Name
  - [x]  Email
  - [x]  Phone
- - [ ]  National ID
- - [ ]  Last Name
+ - [x]  National ID
  - [ ]  Job Title
  - [ ]  Avatar
- - [ ]  Tribe
+ - [x]  Tribe
 ### Finance
  - [ ]  Bank Name
  - [ ]  Account Number
@@ -29,7 +28,7 @@ Generate Tanzanian based mock data
 ### Dates
  - [ ]  Past
  - [ ]  Future
- - [ ]  Recent
+ - [x]  Between
 ### Miscallenous
  - [ ]  Color  
 ### Acknowledgements
