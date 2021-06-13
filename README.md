@@ -3,6 +3,26 @@
 
 Generate Tanzanian based mock data
 
+### Installation and Usage
+To install run `npm install bandia-data`
+
+```javascript
+const bandia = require('bandia-data')
+
+// Person 
+const firstName = bandia.person.firstName()    // Alex
+const lastName = bandia.person.lastName()     // Matiku
+const fullName = bandia.person.fullName()    // Peter Jackson
+const email = bandia.person.email()         // alphamusa@gmail.com
+const phone = bandia.person.phone()   // 0743800456
+const nida = bandia.person.nida()   // 19831212-63860-51590-43
+const tribe = bandia.person.tribe() // Msukuma
+
+// Dates
+const dateBetween = bandia.date.between('2020-12-04', '2021-03-23') // 2021-01-03
+
+```
+
 
 ## Supported Attributes
 
@@ -31,26 +51,6 @@ Generate Tanzanian based mock data
  - [x]  Between
 ### Miscallenous
  - [ ]  Color  
-
-### Usage
-To install run `npm install bandia-data`
-
-```javascript
-const bandia = require('bandia-data')
-
-// Person 
-const firstName = bandia.person.firstName()    // Alex
-const lastName = bandia.person.lastName()     // Matiku
-const fullName = bandia.person.fullName()    // Peter Jackson
-const email = bandia.person.email()         // alphamusa@gmail.com
-const phone = bandia.person.phone()   // 0743800456
-const nida = bandia.person.nida()   // 19831212-63860-51590-43
-const tribe = bandia.person.tribe() // Msukuma
-
-// Dates
-const dateBetween = bandia.date.between('2020-12-04', '2021-03-23') // 2021-01-03
-
-```
 
 
 ### Acknowledgements
