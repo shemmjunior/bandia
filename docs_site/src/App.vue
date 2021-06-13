@@ -1,13 +1,18 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Playground</router-link> |
-      <router-link to="/docs">Docs</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <Navbar />
+    <router-view />
   </div>
 </template>
 
-<style>
+<script>
+import Navbar from "@/components/Navbar";
+export default {
+  components: {
+    Navbar,
+  },
+};
+</script>
 
+<style>
 </style>

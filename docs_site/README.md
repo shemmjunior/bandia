@@ -1,4 +1,4 @@
-# docs_site
+# Bandia Playground
 
 ## Project setup
 ```
