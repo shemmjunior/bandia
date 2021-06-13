@@ -31,6 +31,9 @@ Generate Tanzanian based mock data
  - [x]  Between
 ### Miscallenous
  - [ ]  Color  
+
+### Usage
+
 ### Acknowledgements
 
  - Inspired by [Faker.js](https://github.com/Marak/Faker.js)
