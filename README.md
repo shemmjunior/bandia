@@ -1,4 +1,3 @@
-
 # Bandia Data
 
 Generate Tanzanian based mock data
@@ -22,6 +21,8 @@ const tribe = bandia.person.tribe() // Msukuma
 const dateBetween = bandia.date.between('2020-12-04', '2021-03-23') // 2021-01-03
 
 ```
+
+You can play with the playground site at https://bandia.shemmjunior.me but it is still under development only two attributes are supported up to date. Currently we have only two attributes supported at the playground, the playground will be complete in the near future.
 
 
 ## Supported Attributes
