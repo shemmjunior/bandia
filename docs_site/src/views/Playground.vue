@@ -34,7 +34,7 @@
         <br />
       </div>
       <div class="card">
-        <vue-json-pretty :highlightSelectedNode="false" :data="results">
+        <vue-json-pretty style="height: 50% !important; overflow-y: scroll;" :highlightSelectedNode="false" :data="results">
         </vue-json-pretty>
       </div>
     </div>
@@ -47,6 +47,7 @@ import VueJsonPretty from "vue-json-pretty";
 import "vue-json-pretty/lib/styles.css";
 import * as bandia from "../../../src/index";
 import Button from "@/components/Button";
+import { forEach } from '../../../src/data/first_name';
 export default {
   name: "Playground",
   components: {
@@ -87,6 +88,8 @@ export default {
     runCode() {
       const editor1 = this.$refs.editor1.editor.getValue();
       const compiled = eval(editor1);
+  
+
       if (compiled === undefined) {
       } else {
         let obj = {};
