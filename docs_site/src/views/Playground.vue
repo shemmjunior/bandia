@@ -7,18 +7,28 @@
     <div class="cards">
       <div class="card">
         <h4>How to Generate Data</h4>
-        Define an array with the attributes you want currently we have
-        two...more are to come.
-
+        Define the schema with any object keys name you want. Also Currently we have
+        two supported APIs...more are to come.
         <ul>
           <li>firstName</li>
           <li>lastName</li>
         </ul>
-        Also you'll have to specify the length of data you want to generate by
-        writing the number to the last index of the defined array <br /><br />
-        Example of Definition: <br /><br />
-        ["firstName", "lastName", 10] <br /><br />
-        Press generate data <br /><br />
+        <br />
+        Example of Definition: <br>
+        <pre>
+  <code>
+    var schema = {
+        jina_la_kwanza: "bandia.firstName",
+        jina_la_mwisho: "bandia.lastName",
+
+        size: 10 // Length of objects to generate
+      
+      };
+
+    schema;
+  </code>
+</pre>
+        Finally Press generate data <br /><br />
         Here we generate 10 objects with firstName and lastName
       </div>
       <div class="card">
@@ -34,7 +44,11 @@
         <br />
       </div>
       <div class="card">
-        <vue-json-pretty :highlightSelectedNode="false" :data="results">
+        <vue-json-pretty
+          style="height: 50% !important; overflow-y: scroll"
+          :highlightSelectedNode="false"
+          :data="results"
+        >
         </vue-json-pretty>
       </div>
     </div>
@@ -47,6 +61,7 @@ import VueJsonPretty from "vue-json-pretty";
 import "vue-json-pretty/lib/styles.css";
 import * as bandia from "../../../src/index";
 import Button from "@/components/Button";
+import { forEach } from "../../../src/data/first_name";
 export default {
   name: "Playground",
   components: {
@@ -74,7 +89,17 @@ export default {
     };
   },
   mounted() {
-    this.content = `["firstName", "lastName", 10]`.toString();
+    this.content = `
+    var schema = {
+    jina_la_kwanza: "bandia.firstName",
+    jina_la_mwisho: "bandia.lastName",
+    size: 10
+    };
+
+    schema;
+    
+    
+    `.toString();
   },
   methods: {
     editorInit: function () {
@@ -87,6 +112,20 @@ export default {
     runCode() {
       const editor1 = this.$refs.editor1.editor.getValue();
       const compiled = eval(editor1);
+      const keys = Object.keys(compiled);
+      const size = compiled.size;
+
+      // Definitions
+      const bandiaFirstName = keys.find(
+        (key) => compiled[key] == "bandia.firstName"
+      );
+      const bandiaLastName = keys.find(
+        (key) => compiled[key] == "bandia.lastName"
+      );
+      const bandiaFullName = keys.find(
+        (key) => compiled[key] == "bandia.fullName"
+      );
+
       if (compiled === undefined) {
       } else {
         let obj = {};
@@ -99,28 +138,35 @@ export default {
         let lastNameObj = [];
         let fullNameObj = [];
 
-        for (let i = 0; i < compiled.length; i++) {
-          const size = compiled[compiled.length - 1];
-
-          if (compiled[i] == "firstName") {
+        for (let i = 0; i < size; i++) {
+          if (
+            keys[i] === bandiaFirstName &&
+            compiled[bandiaFirstName] === "bandia.firstName"
+          ) {
             for (let j = 0; j < size; j++) {
               firstName = bandia.person.firstName();
               var obj_temp1 = {};
-              obj_temp1.firstName = firstName;
+              obj_temp1[bandiaFirstName] = firstName;
               firstNameObj.push(obj_temp1);
             }
-          } else if (compiled[i] == "lastName") {
+          } else if (
+            keys[i] === bandiaLastName &&
+            compiled[bandiaLastName] === "bandia.lastName"
+          ) {
             for (let j = 0; j < size; j++) {
               lastName = bandia.person.lastName();
               var obj_temp2 = {};
-              obj_temp2.lastName = lastName;
+              obj_temp2[bandiaLastName] = lastName;
               lastNameObj.push(obj_temp2);
             }
-          } else if (compiled[i] == "fullName") {
+          } else if (
+            keys[i] === bandiaFullName &&
+            compiled[bandiaFullName] === "bandia.fullName"
+          ) {
             for (let j = 0; j < size; j++) {
               fullName = bandia.person.fullName();
               var obj_temp3 = {};
-              obj_temp3.fullName = fullName;
+              obj_temp3[bandiaFullName] = fullName;
               fullNameObj.push(obj_temp3);
             }
           }
@@ -130,6 +176,7 @@ export default {
           ...lastNameObj[i],
           ...fullNameObj[i],
         }));
+
         this.results = temp;
       }
     },
@@ -166,6 +213,11 @@ export default {
   justify-content: center;
 }
 
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+}
 .vjs-tree {
   background-color: #272822 !important;
   color: white !important;
