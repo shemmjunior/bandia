@@ -1,0 +1,53 @@
+.card {
+    padding: 1rem;
+    height: 50%;
+    width: auto;
+    
+  }
+  .btn {
+    height: 35px;
+    margin: 5px 10px;
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn.btn-primary {
+    background-color: #17499f;
+    color: #ffffff;
+  }
+  .btn.btn-primary:hover {
+    background-color: #0e377c;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+  }
+  .vjs-tree {
+    background-color: #272822 !important;
+    color: white !important;
+    font-size: 12px !important;
+    min-height: 600px;
+  }
+  
+  .vjs-tree__node:hover {
+    background-color: darkgray !important;
+  }
+  
+  .cards {
+    max-width: auto;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }

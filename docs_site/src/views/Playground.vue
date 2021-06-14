@@ -7,14 +7,14 @@
     <div class="cards">
       <div class="card">
         <h4>How to Generate Data</h4>
-        Define the schema with any object keys name you want. Also Currently we have
-        two supported APIs...more are to come.
+        Define the schema with any object keys name you want. Also Currently we
+        have two supported APIs...more are to come.
         <ul>
           <li>firstName</li>
           <li>lastName</li>
         </ul>
         <br />
-        Example of Definition: <br>
+        Example of Definition: <br />
         <pre>
   <code>
     var schema = {
@@ -61,7 +61,7 @@ import VueJsonPretty from "vue-json-pretty";
 import "vue-json-pretty/lib/styles.css";
 import * as bandia from "../../../src/index";
 import Button from "@/components/Button";
-import { forEach } from "../../../src/data/first_name";
+import * as example from "../assets/example";
 export default {
   name: "Playground",
   components: {
@@ -72,20 +72,7 @@ export default {
   data() {
     return {
       content: null,
-      results: [
-        {
-          firstName: "Alpha",
-          lastName: "John",
-        },
-        {
-          firstName: "Peter",
-          lastName: "Alex",
-        },
-        {
-          firstName: "Musa",
-          lastName: "Charles",
-        },
-      ],
+      results: example,
     };
   },
   mounted() {
@@ -184,57 +171,4 @@ export default {
 };
 </script>
 
-<style>
-.card {
-  padding: 1rem;
-  height: 50%;
-  width: auto;
-}
-.btn {
-  height: 35px;
-  margin: 5px 10px;
-  padding: 6px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn.btn-primary {
-  background-color: #17499f;
-  color: #ffffff;
-}
-.btn.btn-primary:hover {
-  background-color: #0e377c;
-}
-.center {
-  display: flex;
-  justify-content: center;
-}
-
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-}
-.vjs-tree {
-  background-color: #272822 !important;
-  color: white !important;
-  font-size: 12px !important;
-  min-height: 600px;
-}
-
-.vjs-tree__node:hover {
-  background-color: darkgray !important;
-}
-
-.cards {
-  max-width: auto;
-  height: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-</style>
+<style></style>
