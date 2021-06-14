@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/shemmjunior/bandia.svg?branch=main)](https://travis-ci.com/shemmjunior/bandia)
 # Bandia Data
 
 Generate Tanzanian based mock data
