@@ -3,7 +3,8 @@
 Generate Tanzanian based mock data
 
 ### Installation and Usage
-To install run `npm install bandia-data`
+Currently releases are under beta version until all attributes are added
+To install run `npm install bandia-data@0.0.2-beta.1`
 
 ```javascript
 const bandia = require('bandia-data')
