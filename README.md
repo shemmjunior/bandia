@@ -19,6 +19,15 @@ const tribe = bandia.person.tribe() // Msukuma
 
 // Dates
 const dateBetween = bandia.date.between('2020-12-04', '2021-03-23') // 2021-01-03
+const past = bandia.date.past() // 2019-04-05
+const future = bandia.date.future() // Future Date from Today
+
+// Finance
+const bankName = bandia.finance.bank() // CRDB Bank
+const companyName = bandia.company.name() // Katani Ltd
+
+// Misc
+const = bandia.misc.rangi() // Nyekundu
 
 
 ```
@@ -52,7 +61,7 @@ You can play with the playground site at https://bandia.shemmjunior.me but it is
  - [x]  Future
  - [x]  Between
 ### Miscallenous
- - [ ]  Color  
+ - [x]  Color  
 
 
 ### Acknowledgements
