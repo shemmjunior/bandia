@@ -36,36 +36,77 @@ const person = {
 
   nida: () => {
     // Format: 19950304-19345-04546-43
-    const block1 = date.between('1950-01-01', '1999-12-31').replace(/-/g, '');
+    const block1 = date.between("1950-01-01", "1999-12-31").replace(/-/g, "");
     const block2 = helpers.random_number_length(5);
     const block3 = helpers.random_number_length(5);
     const block4 = helpers.random_number_length(2);
-    return `${block1}-${block2}-${block3}-${block4}`
+    return `${block1}-${block2}-${block3}-${block4}`;
   },
 
   tribe: () => {
     return provider.tribe[helpers.random_element(provider.tribe)];
-
-  }
+  },
 };
 
-
 const date = {
-    between: (startdate, enddate) => {
-      if (typeof startdate === "undefined") {
-        return 'Missing Valid Parameters'
-      } else {
-      const start = new Date(startdate)
-      const end = new Date(enddate)
-          return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime())).toISOString().slice(0, 10)
-      }
-    },
+  between: (startdate, enddate) => {
+    if (typeof startdate === "undefined") {
+      return "Missing Valid Parameters";
+    } else {
+      const start = new Date(startdate);
+      const end = new Date(enddate);
+      return new Date(
+        start.getTime() + Math.random() * (end.getTime() - start.getTime())
+      )
+        .toISOString()
+        .slice(0, 10);
+    }
+  },
 
-  
-  }
+  past: () => {
+      const start = new Date('2019-01-31');
+      const end = new Date();
+      return new Date(
+        start.getTime() + Math.random() * (end.getTime() - start.getTime())
+      )
+        .toISOString()
+        .slice(0, 10);
+  },
+
+  future: () => {
+    const start = new Date();
+    const end = new Date('2022-12-31');
+    return new Date(
+      start.getTime() + Math.random() * (end.getTime() - start.getTime())
+    )
+      .toISOString()
+      .slice(0, 10);
+},
+};
+
+const finance = {
+  bank: () => {
+    return provider.bank[helpers.random_element(provider.bank)];
+  },
+};
+
+const company = {
+  name: () => {
+    return provider.company[helpers.random_element(provider.company)];
+  },
+};
+
+const misc = {
+  rangi: () => {
+    return provider.color[helpers.random_element(provider.color)];
+  },
+};
 
 
 module.exports = {
   person,
-  date
+  date,
+  finance,
+  company,
+  misc
 };

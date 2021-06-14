@@ -2,7 +2,9 @@ module.exports = [
     "gmail.com",
     "yahoo.com",
     "protonmail.com",
-    "ewura.co.tz"
+    "ewura.go.tz",
+    "maji.go.tz",
+    "tamisemi.go.tz"
 
   ];
   

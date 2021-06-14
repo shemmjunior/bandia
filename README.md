@@ -20,6 +20,7 @@ const tribe = bandia.person.tribe() // Msukuma
 // Dates
 const dateBetween = bandia.date.between('2020-12-04', '2021-03-23') // 2021-01-03
 
+
 ```
 
 You can play with the playground site at https://bandia.shemmjunior.me but it is still under development only two attributes are supported up to date. Currently we have only two attributes supported at the playground, the playground will be complete in the near future.
@@ -38,17 +39,17 @@ You can play with the playground site at https://bandia.shemmjunior.me but it is
  - [ ]  Avatar
  - [x]  Tribe
 ### Finance
- - [ ]  Bank Name
+ - [x]  Bank Name
  - [ ]  Account Number
  - [ ]  Amount
  - [ ]  Transaction Type
 ### Company
- - [ ]  Company Name
+ - [x]  Company Name
  - [ ]  Address
  - [ ]  Description
 ### Dates
- - [ ]  Past
- - [ ]  Future
+ - [x]  Past
+ - [x]  Future
  - [x]  Between
 ### Miscallenous
  - [ ]  Color  

@@ -21,3 +21,15 @@ expect(bandia.person.nida()).to.have.lengthOf(23)
 
 /** Tribe */
 expect(bandia.person.tribe()).to.be.a('string');
+
+/** Bank */
+expect(bandia.finance.bank()).to.be.a('string');
+
+/** Company */
+expect(bandia.company.name()).to.be.a('string');
+
+/** Color */
+expect(bandia.misc.rangi()).to.be.a('string');
+
+
+
