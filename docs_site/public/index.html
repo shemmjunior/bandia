@@ -7,10 +7,12 @@
     <link rel='icon' href="<%= BASE_URL %>custom.ico">
     <title>Bandia | Data Generator</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <!-- <link rel="stylesheet" href="./dracula.css"> -->
+  
   </head>
   <style>
     body {
-      overflow: scroll !important;
+      overflow-y: scroll !important;
       display: visible !important;
     }
   </style>
@@ -20,5 +22,7 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
   </body>
 </html>

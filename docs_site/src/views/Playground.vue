@@ -16,16 +16,14 @@
         <br />
         Example of Definition: <br />
         <pre>
-  <code>
-    var schema = {
-        jina_la_kwanza: "bandia.firstName",
-        jina_la_mwisho: "bandia.lastName",
-
-        size: 10 // Length of objects to generate
-      
-      };
-
-    schema;
+  <code class="language-js">
+  var schema = {
+      jina_la_kwanza: "bandia.firstName",
+      jina_la_mwisho: "bandia.lastName",
+      size: 10 // Length of objects
+    
+    };
+  schema;
   </code>
 </pre>
         Finally Press generate data <br /><br />

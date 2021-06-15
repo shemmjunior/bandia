@@ -1,6 +1,6 @@
 <template>
   <aside class="sidebar">
-    <h1 class="app-name">Bandia</h1>
+    <h1 class="app-name">Bandia Docs</h1>
     <div class="sidebar-nav">
       <ul>
         <li>
@@ -11,14 +11,6 @@
               <li>
                 <router-link to="/installation" class="section-link"
                   >Installation</router-link
-                >
-              </li>
-            </ul>
-            <li><b> Demo</b></li>
-            <ul class="app-sub-header">
-              <li>
-                <router-link to="/playground" class="section-link"
-                  >Playground</router-link
                 >
               </li>
             </ul>
@@ -39,8 +31,16 @@
                 <router-link to="/dates" class="section-link">Dates</router-link>
               </li>
               <li>
-                <router-link to="" class="section-link"
+                <router-link to="/misc" class="section-link"
                   >Miscallenous</router-link
+                >
+              </li>
+            </ul>
+              <li><b> Demo</b></li>
+            <ul class="app-sub-header">
+              <li>
+                <router-link to="/playground" class="section-link"
+                  >Playground</router-link
                 >
               </li>
             </ul>

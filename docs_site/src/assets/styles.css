@@ -30,11 +30,11 @@
     justify-content: center;
   }
   
-  pre code {
+  /* pre code {
     background-color: #eee;
     border: 1px solid #999;
     display: block;
-  }
+  } */
   .vjs-tree {
     background-color: #272822 !important;
     color: white !important;

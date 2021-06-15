@@ -7,6 +7,7 @@ import Installation from "../views/Installation.vue";
 import Company from "../views/api/Company";
 import Finance from "../views/api/Finance";
 import Dates from "../views/api/Dates";
+import Misc from '../views/api/Misc'
 
 Vue.use(VueRouter);
 
@@ -45,6 +46,11 @@ const routes = [
     path: "/finance",
     name: "Finance",
     component: Finance,
+  },
+  {
+    path: "/misc",
+    name: "Misc",
+    component: Misc,
   },
 ];
 
