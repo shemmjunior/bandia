@@ -1,5 +1,5 @@
 <template>
-  <div class="home">Work in Progress...</div>
+  <div class="home">Welcome Page</div>
 </template>
 
 <script>

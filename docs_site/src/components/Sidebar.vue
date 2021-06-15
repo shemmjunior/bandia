@@ -6,23 +6,43 @@
         <li>
           <p>Getting Started</p>
           <ul>
-            <!-- <li><a href="">Installation</a></li>
+            <li><b> Package Installation</b></li>
             <ul class="app-sub-header">
-              <li><a class="section-link" href="">Usage</a></li>
+              <li>
+                <router-link to="/installation" class="section-link"
+                  >Installation</router-link
+                >
+              </li>
             </ul>
-            <li><a href="">Docs</a></li>
+            <li><b> Demo</b></li>
             <ul class="app-sub-header">
-              <li><a class="section-link" href="">Person</a></li>
-              <li><a class="section-link" href="">Finance</a></li>
-              <li><a class="section-link" href="">Company</a></li>
-              <li><a class="section-link" href="">Dates</a></li>
-              <li><a class="section-link" href="">Miscallenous</a></li>
-            </ul> -->
-            <li> <b> Generate Data</b></li>
+              <li>
+                <router-link to="/playground" class="section-link"
+                  >Playground</router-link
+                >
+              </li>
+            </ul>
+            <li><b> Docs</b></li>
             <ul class="app-sub-header">
-              <li><router-link to="/" class="section-link">Playground</router-link></li>
-              <li><router-link to="/docs" class="section-link">Docs</router-link></li>
-
+              <li>
+                <router-link to="/person" class="section-link"
+                  >Person</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/finance" class="section-link">Finance</router-link>
+              </li>
+              <li>
+                <router-link to="/company" class="section-link">Company</router-link>
+              </li>
+              <li>
+                <router-link to="/dates" class="section-link">Dates</router-link>
+              </li>
+              <li>
+                <router-link to="" class="section-link"
+                  >Miscallenous</router-link
+                >
+              </li>
             </ul>
           </ul>
         </li>
