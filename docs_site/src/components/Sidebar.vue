@@ -1,6 +1,6 @@
 <template>
   <aside class="sidebar">
-    <h1 class="app-name">Bandia Docs</h1>
+    <h1 class="app-name">Bandia Data Docs</h1>
     <div class="sidebar-nav">
       <ul>
         <li>
@@ -14,7 +14,7 @@
                 >
               </li>
             </ul>
-            <li><p> Docs</p>
+            <li><p> Usages</p>
             <ul class="app-sub-header">
               <li>
                 <router-link to="/person" class="section-link"

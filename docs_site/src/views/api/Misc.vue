@@ -4,6 +4,22 @@
     <p>This generates Miscallenous data types such as color</p>
 
     <h5>Properties</h5>
+        <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Access Method</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rangi</td>
+          <td>misc.rangi()</td>
+          <td>Generates random Color Name</td>
+        </tr>
+      </tbody>
+    </table>
 
     <p>Basic Example usage:</p>
 

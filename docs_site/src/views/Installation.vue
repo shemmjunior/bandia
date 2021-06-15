@@ -2,8 +2,8 @@
   <div>
     <h1 class="app-name">Introduction</h1>
     <p>
-      Bandia data is a package that generates random data that are useful in
-      every day development especially when mocking data to front-end or data
+      Bandia data is a package that generates random data based on Tanzania that are useful in
+      every day development especially <br> when mocking data to front-end or data
       POST/GET simulator from nodejs backend
     </p>
     <a href="https://www.npmjs.com/package/bandia-data" target="_blank"

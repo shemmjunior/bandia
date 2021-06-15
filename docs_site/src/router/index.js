@@ -2,7 +2,6 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Playground from "../views/Playground.vue";
 import Person from "../views/api/Person.vue";
-import Home from "../views/Home.vue";
 import Installation from "../views/Installation.vue";
 import Company from "../views/api/Company";
 import Finance from "../views/api/Finance";
@@ -14,8 +13,8 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "Installation",
+    component: Installation,
   },
   {
     path: "/playground",

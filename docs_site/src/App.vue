@@ -2,7 +2,7 @@
 <div>
   <nav class="app-nav no-badge">
     <ul><li>
-      <a href="https://github.com/shemmjunior/bandia" target="_blank">Github</a>
+      <a href="https://github.com/shemmjunior/bandia" target="_blank">Github Repo</a>
       </li></ul>
   </nav>
   <main>
@@ -16,6 +16,7 @@
     <Sidebar />
     <section class="content">
         <router-view />
+
     </section>
   </main>
   </div>

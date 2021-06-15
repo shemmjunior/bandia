@@ -8,7 +8,7 @@
       <div class="card">
         <h4>How to Generate Data</h4>
         Define the schema with any object keys name you want. Also Currently we
-        have two supported APIs...more are to come.
+        have two supported properties...more are to come.
         <ul>
           <li>firstName</li>
           <li>lastName</li>
