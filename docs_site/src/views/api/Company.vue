@@ -1,29 +1,26 @@
 <template>
   <div>
     <h1 class="app-name">Company</h1>
- <p>This generates Data of various Companies</p>
+    <p>This generates Data of various Companies</p>
 
-        <h5>Properties</h5>
+    <h5>Properties</h5>
 
     Table Here
-    <p>Basic Example usage: </p>
-    <pre style="width: 55% !important;">
-      <code class="language-js">
+    <p>Basic Example usage:</p>
+    <pre v-highlightjs="sourcecode"><code class="javascript">
         const bandia = require('bandia-data')
 
         const companyName = bandia.company.name() // Katani Ltd
 
-      </code>
-    </pre>
+   </code></pre>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'Company'
-}
+  name: "Company",
+};
 </script>
 
 <style>
-
 </style>

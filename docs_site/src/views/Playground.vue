@@ -15,17 +15,17 @@
         </ul>
         <br />
         Example of Definition: <br />
-        <pre>
-  <code class="language-js">
-  var schema = {
-      jina_la_kwanza: "bandia.firstName",
-      jina_la_mwisho: "bandia.lastName",
-      size: 10 // Length of objects
+        <pre  v-highlightjs="sourcecode"><code class="code javascript">
+      var schema = {
+        jina_la_kwanza: "bandia.firstName",
+        jina_la_mwisho: "bandia.lastName",
+        size: 10 // Length of objects
     
     };
-  schema;
-  </code>
-</pre>
+    schema;
+
+   </code></pre>
+
         Finally Press generate data <br /><br />
         Here we generate 10 objects with firstName and lastName
       </div>
@@ -169,4 +169,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+/* pre code {
+  width: 100% !important;
+} */
+
+.code {
+  width: 100% !important;
+}
+
+</style>

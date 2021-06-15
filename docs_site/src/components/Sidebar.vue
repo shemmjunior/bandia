@@ -6,15 +6,15 @@
         <li>
           <p>Getting Started</p>
           <ul>
-            <li><b> Package Installation</b></li>
+            <li><b> Introduction</b></li>
             <ul class="app-sub-header">
               <li>
                 <router-link to="/installation" class="section-link"
-                  >Installation</router-link
+                  >Intro & Installation</router-link
                 >
               </li>
             </ul>
-            <li><b> Docs</b></li>
+            <li><p> Docs</p>
             <ul class="app-sub-header">
               <li>
                 <router-link to="/person" class="section-link"
@@ -36,6 +36,7 @@
                 >
               </li>
             </ul>
+            </li>
               <li><b> Demo</b></li>
             <ul class="app-sub-header">
               <li>

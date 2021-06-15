@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel='icon' href="<%= BASE_URL %>custom.ico">
     <title>Bandia | Data Generator</title>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-    <!-- <link rel="stylesheet" href="./dracula.css"> -->
-  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">  
   </head>
   <style>
     body {
@@ -16,13 +14,12 @@
       display: visible !important;
     }
   </style>
-  <body>
+  <body class="ready sticky">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+   
   </body>
 </html>
