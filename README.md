@@ -1,10 +1,13 @@
 [![Build Status](https://travis-ci.com/shemmjunior/bandia.svg?branch=main)](https://travis-ci.com/shemmjunior/bandia)
 # Bandia Data
 
-Generate Tanzanian based mock data
+Generate Tanzanian based mock data for fast ui population and server responses mockups.
+
+For full documentation visit https://bandia.shemmjunior.me
 
 ### Installation and Usage
-Currently releases are under beta version until all attributes are added
+Currently releases are under beta version until all attributes are added.
+
 To install run `npm install bandia-data@0.0.2-beta.1`
 
 ```javascript
