@@ -16,7 +16,7 @@ const bandia = require('bandia-data')
 // Person 
 const firstName = bandia.person.firstName()    // Alex
 const lastName = bandia.person.lastName()     // Matiku
-const fullName = bandia.person.fullName()    // Peter Jackson
+const fullName = bandia.person.fullName()    // Maswi Mussa
 const email = bandia.person.email()         // alphamusa@gmail.com
 const phone = bandia.person.phone()   // 0743800456
 const nida = bandia.person.nida()   // 19831212-63860-51590-43
