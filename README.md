@@ -3,12 +3,14 @@
 
 Generate Tanzanian based mock data for fast ui population and server responses mockups.
 
-For full documentation visit https://bandia.shemmjunior.me
+For Full documentation visit https://bandia.shemmjunior.me
+
+[DEMO AVAILABLE HERE](https://bandia.shemmjunior.me/#/playground)
 
 ### Installation and Usage
-Currently releases are under beta version until all attributes are added.
 
-To install run `npm install bandia-data@0.0.2-beta.1`
+To install run `npm install bandia-data`
+
 
 ```javascript
 const bandia = require('bandia-data')
@@ -36,8 +38,6 @@ const = bandia.misc.rangi() // Nyekundu
 
 
 ```
-
-You can play with the playground site at https://bandia.shemmjunior.me but it is still under development only two attributes are supported up to date. Currently we have only two attributes supported at the playground, the playground will be complete in the near future.
 
 
 ## Supported Attributes

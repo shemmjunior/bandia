@@ -1,6 +1,6 @@
 {
   "name": "bandia-data",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Swahili mock data generator",
   "main": "src/index.js",
   "scripts": {
