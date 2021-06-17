@@ -69,8 +69,12 @@ const = bandia.misc.rangi() // Nyekundu
  - [x]  Past
  - [x]  Future
  - [x]  Between
+### Ecommerce
+ - [ ] Products with pricing
+ - [ ] Descriptions
 ### Miscallenous
- - [x]  Color  
+ - [x]  Color
+ - [ ]  Food  
 
 
 ### Acknowledgements
