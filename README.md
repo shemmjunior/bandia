@@ -52,6 +52,10 @@ const = bandia.misc.rangi() // Nyekundu
  - [ ]  Job Title
  - [ ]  Avatar
  - [x]  Tribe
+ ### Location
+ - [ ]  Region
+ - [ ]  District
+ - [ ]  Ward
 ### Finance
  - [x]  Bank Name
  - [ ]  Account Number
@@ -70,12 +74,12 @@ const = bandia.misc.rangi() // Nyekundu
 
 
 ### Acknowledgements
-
  - Inspired by [Faker.js](https://github.com/Marak/Faker.js)
-
+ 
+## Contributing
+Contributions are always welcome 😃! Currently we need more data and you can raise a PR for any issue or feature support.
   
 ## License
-
 [MIT](https://choosealicense.com/licenses/mit/)
 
   
