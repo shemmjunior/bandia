@@ -31,5 +31,5 @@ expect(bandia.company.name()).to.be.a('string');
 /** Color */
 expect(bandia.misc.rangi()).to.be.a('string');
 
-
-
+/** Food */
+expect(bandia.misc.food()).to.be.a('string');

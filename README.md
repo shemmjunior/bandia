@@ -74,7 +74,7 @@ const = bandia.misc.rangi() // Nyekundu
  - [ ] Descriptions
 ### Miscallenous
  - [x]  Color
- - [ ]  Food  
+ - [x]  Food  
 
 
 ### Acknowledgements

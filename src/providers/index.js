@@ -8,5 +8,6 @@ data.tribe = require('./tribe')
 data.bank = require('./bank')
 data.company = require('./company')
 data.color = require('./color')
+data.food = require('./food')
 
 module.exports = data
