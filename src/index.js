@@ -46,6 +46,10 @@ const person = {
     tribe: () => {
         return provider.tribe[helpers.random_element(provider.tribe)];
     },
+
+    job: () => {
+        return provider.job[helpers.random_element(provider.job)];
+    },
 };
 
 const date = {
