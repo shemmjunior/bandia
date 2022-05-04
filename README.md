@@ -3,9 +3,7 @@
 
 Generate Tanzanian based mock data for fast ui population and server responses mockups.
 
-For Full documentation visit https://bandia.shemmjunior.me
-
-[DEMO AVAILABLE HERE](https://bandia.shemmjunior.me/#/playground)
+[View demo](https://https://bandia.netlify.app/#/playground)
 
 ### Installation and Usage
 
